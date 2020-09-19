@@ -25,10 +25,9 @@ Temporizadores
 
 Funções
 
-- [x]Função anônima com argumento
-- [x]Função anônima sem argumento
-- [x]unção anônima com retorno
-- [x]nção anônima com retorno
+- [x] Função anônima com argumento
+- [x] Função anônima sem argumento
+- [x] Função anônima com retorno
 - [ ] Função auto-executável
 - [x] Função com nome
 - [ ] Função aninhada/local - declarar uma função dentro de outra
