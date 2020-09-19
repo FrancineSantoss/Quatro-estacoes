@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--icons -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/resources/css/stylesheet.css" media="screen" /> 
+  
+   
+  </head>
+  <body onload="gerarCaptcha();">
+    <ul class="nav nav-tabs" style="background-color: #F8F8FF;">
+  <li class="nav-item">
+     <a class="nav-link" href="index.html" >Home</a>
+
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Coleções</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Inverno</a>
+      <a class="dropdown-item" href="#">Outono</a>
+      <a class="dropdown-item" href="#">Primavera</a>
+      <a class="dropdown-item" href="#">Verão</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="promocao.html">Promoções</a>
+
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="contato.html">Contato</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="sobre.html">Sobre</a>
+  </li>
+   <img class="logo" src="assets/resources/img/logo.jpg" height="80" width="80">
+  <nav class="navbar navbar-light" style="background-color: #F8F8FF;">
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+    <button id="botaoform" class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+  </form>
+ <i class='fas fa-cart-plus ml-3' style='font-size:25px'></i>
+ <i class='fas fa-heart ml-3' style='font-size:25px'></i>
+ <table>
+  <tr>
+    <td><i class='far fa-user-circle ml-3' style='font-size:25px'></td>
+    
+    <td> Olá, </br>
+    faça login ou <br>
+    cadastre-se </td> 
+  </tr>
+ 
+</table>
+  
+ </i>
+</nav>
+</ul>
+<main>
+<div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="assets/resources/img/logo.jpg"  height="500" alt="Imagem de capa do card">
+    <div class="card-body">
+    
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-body">
+      <br>
+      <br>
+      <br>
+      <h6 class="card-title" style='font-size:25px'>Tem alguma duvida?</h6>
+       <p class="text-center">Mande sua duvida que entraremos em contato</p>
+       <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Endereço de email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+    <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputMensag">Mensagem</label>
+    <input type="msg" class="form-control" id="exampleInputPassword1" placeholder="Mensagem">
+  </div>
+  <input type="text" id="mainCaptcha"readonly="readonly"/> 
+                  <input type="button" id="refresh" value="Gerar" onclick="gerarCaptcha();" /> 
+               
+                  <input type="text" id="txtInput"/>    
+                    <br>
+                    <br>
+                   <p class="text-center"><input id="Button1" type="submit" value="Enviar" onclick="CheckValideCaptcha();"/></p>
+                  <span id="erro" style="color:red"></span>
+                  <span id="sucesso" style="color:green"></span>
+                
+
+
+   
+</form>
+    </div>
+  </div>
+
+</div>
+ </main>
+<br>
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark">
+
+  <div style="background-color: #F8F8FF;">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">Fique por dentro de tudo! Conecte conosco</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a class="fb-ic">
+            <i class="fab fa-facebook-f white-text mr-4"> </i>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <i class="fab fa-instagram white-text"> </i>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+ 
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold">Quatro estações</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p> Loja criada para pessoas que entendem que conforto pode ser aliado ao estilo e ao bom gosto, nas quatro estações</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Produtos</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="#!">Calças</a>
+        </p>
+        <p>
+          <a href="#!">Camisetas</a>
+        </p>
+        <p>
+          <a href="#!">Jaquetas</a>
+        </p>
+        <p>
+          <a href="#!">Vestidos</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">links uteis</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="www.denimzero.com.br/">Login</a>
+        </p>
+        <p>
+          <a href="#!">Cadastrar</a>
+        </p>
+        <p>
+          <a href="#!">Torne-se parceiro</a>
+        </p>
+        <p>
+          <a href="#!">Help</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contato </h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3"></i> Guarapuava, conego braga xxx</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i> oiquatroestacoes@gmail.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i>(42) 98838-0220 </p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> Desenvolvimento web 2</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+<!-- Script -->
+<!-- alert -->
+
+  <script type="text/javascript" src="assets/resources/js/contato.js"> </script>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
