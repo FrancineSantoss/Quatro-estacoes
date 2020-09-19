@@ -20,7 +20,7 @@ Caixas de Diálogo
 
 Temporizadores
 
-- [x]setInterval
+- [x] setInterval
 - [x] setTimeout
 
 Funções
