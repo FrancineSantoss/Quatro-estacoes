@@ -3,6 +3,8 @@
 GitHub Pages: 
 https://francinesantoss.github.io/quatro-estacoes/index.html
 
+VIDEO AULA SOBRE O SITE (DRIVE): https://drive.google.com/drive/folders/1mwA28n1Y3T83XlNuKX5Mf-lbuyfSuwGK?usp=sharing
+
 Qualidade do código
 
 - [ ] Usar um Style Guide - apresentar o uso de pelo menos 10 regras do style escolhido (sugerido AirBnb)
