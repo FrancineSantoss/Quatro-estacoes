@@ -63,7 +63,7 @@ function validaFormulario(evt){
 }
 
 function tudocerto(){
-  validaCadastro();
+  validaFormulario();
   alert("Mensagem enviada com sucesso!");
 }
 
