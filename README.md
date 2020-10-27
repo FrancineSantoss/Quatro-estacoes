@@ -43,13 +43,13 @@ Acesso aos elementos DOM do HTML
 - [x] Via getElementByID()
 - [x] Via getElementsByName()
 - [x] Via getElementsByTagName()
-- [ ] Via seletores CSS usados na função querySelector() ou querySelectorAll()
+- [x] Via seletores CSS usados na função querySelector() ou querySelectorAll()
 
 Tratadores de Evento
 
 - [ ] Especificar o tratador de evento inline
 - [x] Especificar o tratador de evento no carregamento da página HTML no modo tradicional - no onload
-- [ ] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener - no onload
+- [x] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener - no onload
 - [x] Usar o operador this em funções tratadoras de eventos.
 
 Objetos Nativos
