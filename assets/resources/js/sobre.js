@@ -1,5 +1,5 @@
-var posicao = 0;
-       var mensagem = "Bem vindo á quatro estações, cadastre-se para receber todas as novidades... ";  //Esse texto
+let posicao = 0;
+       let mensagem = "Bem vindo á quatro estações, cadastre-se para receber todas as novidades... ";  //Esse texto
 
          function rola() {
          document.getElementsByName("lugar")[0].innerHTML = 
@@ -8,15 +8,15 @@ var posicao = 0;
            if (posicao == mensagem.length) {
                 posicao = 0;
                }
-           setTimeout("rola()", 70); 
+           setTimeout("rola()", 100); 
       }
 
 
-      var rel = setInterval(relogio, 2000);
+      let rel = setInterval(relogio, 5000);
 
 function relogio() {
-  var d = new Date();
-  var t = d.toLocaleTimeString();
+  let d = new Date();
+  let t = d.toLocaleTimeString();
   document.getElementById("demo").innerHTML = t;
 } 
 

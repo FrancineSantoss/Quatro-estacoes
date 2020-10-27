@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/resources/css/stylesheet.css" media="screen" /> 
   
+  <!-- import maroto direto do site do jquery-->
+<script language="javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
    
   </head>
   <body onload="gerarCaptcha();">
@@ -22,12 +24,12 @@
   <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Coleções</a>
     <div class="dropdown-menu">
-      <a class="dropdown-item" href="#">Inverno</a>
-      <a class="dropdown-item" href="#">Outono</a>
-      <a class="dropdown-item" href="#">Primavera</a>
-      <a class="dropdown-item" href="#">Verão</a>
+           <a class="dropdown-item" href="inverno.html">Inverno</a>
+      <a class="dropdown-item" href="outono">Outono</a>
+      <a class="dropdown-item" href="primavera">Primavera</a>
+      <a class="dropdown-item" href="verao.html">Verão</a>
       <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="promocao.html">Promoções</a>
+      <a class="dropdown-item" href="promocao.html">Promoções do dia</a>
 
   </li>
   <li class="nav-item">
@@ -73,27 +75,63 @@
       <br>
       <h6 class="card-title" style='font-size:25px'>Tem alguma duvida?</h6>
        <p class="text-center">Mande sua duvida que entraremos em contato</p>
-       <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Endereço de email</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
-    <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputMensag">Mensagem</label>
-    <input type="msg" class="form-control" id="exampleInputPassword1" placeholder="Mensagem">
-  </div>
-  <input type="text" id="mainCaptcha"readonly="readonly"/> 
-                  <input type="button" id="refresh" value="Gerar" onclick="gerarCaptcha();" /> 
-               
-                  <input type="text" id="txtInput"/>    
-                    <br>
-                    <br>
-                   <p class="text-center"><input id="Button1" type="submit" value="Enviar" onclick="CheckValideCaptcha();"/></p>
-                  <span id="erro" style="color:red"></span>
-                  <span id="sucesso" style="color:green"></span>
-                
+    <div class='container'>
+    <form action="" method="post" id='form-contato' onsubmit="return tudocerto()">
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input type="text" class="form-control" id="nome" name="nome" placeholder="Informe o Nome">
+          <span class='msg-erro msg-nome'></span>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Informe o E-mail">
+          <span class='msg-erro msg-email'></span>
+        </div>
+        <div class="form-group">
+          <label for="telefone">WhatsApp</label>
+          <input type="telefone" class="form-control" id="telefone" required placeholder="(55) 00000-0000"
+             pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" title="Numero não confere com o padrão."placeholder="informe o numero">
+          <span class='msg-erro msg-telefone'></span>
+        </div>
 
+         <div class="form-group">
+          <label for="Mensagem">Mensagem</label>
+          <input type="text" class="form-control" id="men" name="men"  placeholder="Digite a mensagem" >
+          <span class='msg-erro msg-email'></span>
+        </div>
+        <div class="form-group">
+          <label for="privilegio">Sexo</label>
+          <select class="form-control" name="sexo" id="sexo">
+          <option value="">Selecione o Sexo</option>
+          <option value="Feminino">Feminino</option>
+          <option value="Masculino">Masculino</option>
+        </select>
+        <span class='msg-erro msg-sexo'></span>
+    
+        <input type="checkbox" id="checkbox" name="checkbox" />
+        <label for="c1">Aceito o <a href="termos.html">Termo de uso</a></label>
+        <span class='msg-erro msg-c1'></span>
+        <br>
+        <input type="checkbox" id="c1" name="cc" />
+        <label for="c1">Cupom para proxima compra?</label>
+        <br>
+        <input type="checkbox" id="c1" name="cc" />
+        <label for="c1">Contato via telefone</label>
+        <br>
+        <input type="checkbox" id="c1" name="cc" />
+        <label for="c1">Contato via Email</label>
+        <br>
+        <input type="checkbox" name="allCB" onclick="checkedOrUnCheckedAll(this);"><b> marcar ou desmarcar todos</b>
+
+        </div>
+
+
+        <button type="submit" class="btn btn-primary" id='botao2'> 
+          Enviar
+          
+        </button>
+    </form>
+  </div>
 
    
 </form>

@@ -1,3 +1,5 @@
+
+
 table{
 	padding-left: 20px;
 	font-size: 12px;
@@ -141,3 +143,45 @@ text-indent:0;
 	position:relative;
 	top:1px;
 }
+
+.msg-erro{ 
+	color: red;
+	}
+
+#mostrar{
+  display: none;
+}
+
+#passar_mouse:hover #mostrar{
+  display:block;
+  }
+
+ #eximg{
+ 	width: 200px;
+ 	margin-left: 550px;
+ }
+ #passar_mouse{
+ 	width:1px;
+ }
+ #mostrar{
+
+ 	margin-left: 650px;
+ }
+ #mostrarInverno{
+  display: none;
+
+ }
+ #passar_mouse2:hover #mostrarInverno{
+  display:block;
+  }
+
+
+  #preco{
+  	color: gray;
+  }
+
+  #inverno{
+  	font-size: 100px;
+  	padding-right:  100px;
+  	
+  }
