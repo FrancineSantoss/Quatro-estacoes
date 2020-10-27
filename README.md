@@ -5,15 +5,6 @@ https://francinesantoss.github.io/quatro-estacoes/index.html
 
 VIDEO AULA SOBRE O SITE (DRIVE): https://drive.google.com/drive/folders/1mwA28n1Y3T83XlNuKX5Mf-lbuyfSuwGK?usp=sharing
 
-Qualidade do código
-
-- [ ] Usar um Style Guide - apresentar o uso de pelo menos 10 regras do style escolhido (sugerido AirBnb)
-- [ ] Usar um lint - mostrar a correção de pelo menos 5 problemas informados pelo lint (sugerido JSHint - usar o arquivo .jshintrc disponível no moodle)
-- [ ] Usar strict mode
-- [ ] Usar Module Pattern
-- [x] Usar pasta assets e subpastas resources e libraries para organizar o código
-- [x] Usar let ao invés de var
-- [x] Nomes de arquivos minúsculos e separados por hífen (dashed-case)
 
 Caixas de Diálogo
 
@@ -61,18 +52,6 @@ Tratadores de Evento
 - [ ] Especificar o tratador de evento no carregamento da página HTML com a função addEventListener - no onload
 - [x] Usar o operador this em funções tratadoras de eventos.
 
-Formulário
-
-- [ ] Validação de formulário com onsubmit usando os métodos tradicionais
-- [ ] Validação de formulário com HTML5 API
-- [ ] Customizar as mensagens nos balões de mensagem
-- [ ] Usar os atributos de validação dos inputs
-- [ ] Usar expressões regulares
-- [ ] Ler e escrever em elementos input com a propriedade value
-- [ ] Alterar o conteúdo de elementos div ou p com a propriedade innerHTML ou textContent
-- [ ] Manipulação de elemento de listagem, como checkbox, radio ou select
-- [ ] Acesso aos elementos de um formulário via hierarquia (caminho) de objetos, ou seja, array forms e elements
-
 Objetos Nativos
 
 - [ ] Usar pelo menos 3 métodos de manipulação de array
@@ -85,15 +64,30 @@ Objetos
 - [ ] Criar objeto usando função construtora ou notação literal
 - [ ] Usar herança prototipal
 
-Canvas
 
-- [ ] Desenho de caminho ou arco
-- [ ] Desenho de texto ou imagem
+Qualidade do código
 
-Animação
+- [x] Usar um Style Guide - apresentar o uso de pelo menos 10 regras do style escolhido (sugerido AirBnb)
+- [ ] Usar um lint - mostrar a correção de pelo menos 5 problemas informados pelo lint (sugerido JSHint - usar o arquivo .jshintrc disponível no moodle)
+- [x] Usar strict mode
+- [x] Usar Module Pattern
+- [x] Usar pasta assets e subpastas resources e libraries para organizar o código
+- [x] Usar let ao invés de var
+- [x] Nomes de arquivos minúsculos e separados por hífen (dashed-case)
 
-- [ ] Por meio da manipulação do vetor images
-- [ ] Por meio da manipulação do canvas
+
+Formulário
+
+- [x] Validação de formulário com onsubmit usando os métodos tradicionais
+- [x] Validação de formulário com HTML5 API
+- [x] Customizar as mensagens nos balões de mensagem
+- [x] Usar os atributos de validação dos inputs
+- [x] Usar expressões regulares
+- [x] Ler e escrever em elementos input com a propriedade value
+- [x] Alterar o conteúdo de elementos div ou p com a propriedade innerHTML ou textContent
+- [x] Manipulação de elemento de listagem, como checkbox, radio ou select
+- [ ] Acesso aos elementos de um formulário via hierarquia (caminho) de objetos, ou seja, array forms e elements
+
 
 jQuery
 
@@ -105,14 +99,13 @@ jQuery
 - [ ] Manipulação do CSS via função css() e addClass()/removeClass()
 - [ ] Manipulação do conteúdo de um input e div usando jQuery
 
-Manipular componentes do HTML5 API
-
-- [ ] map
-- [ ] online ou visibilidade
-- [ ] audio ou video
 
 Web Storage
 
 - [ ] LocalStorage ou SessionStorage
 - [ ] Leitura e escrita de dados simples
 - [ ] Leitura e escrita de JSON
+
+Ajax com Backend
+
+ Implementação funcional (basta fazer funcionar uma requisição) do backend em ExpressJS na plataforma Node e requisições AJAX.
