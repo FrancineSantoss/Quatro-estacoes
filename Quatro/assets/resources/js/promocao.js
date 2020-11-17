@@ -3,9 +3,10 @@
   //x.getElementsByTagName("*")[Math.random().style.backgroundColor = "yellow";
 
 //}
-function promocao(){
 
-	'use strict'
+$(document).ready(function(){
+  $("#p1").mouseenter(function(){
+   'use strict'
    
    let img01 = Math.round(Math.random()*4);
    
@@ -19,10 +20,7 @@ function promocao(){
      ];
   
     document.getElementById('eximg').src = img02[img01];
-   
-
-}
-
-
+  });
+});
 
 

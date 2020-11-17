@@ -1,3 +1,6 @@
+
+
+
 let form = document.getElementById("form-contato");
 
 if (form.addEventListener) {                   
@@ -78,6 +81,5 @@ function checkedOrUnCheckedAll(field) {
         $("input[type=checkbox]").attr('checked', false);//desmarca all check
     }
 }
-
 
 

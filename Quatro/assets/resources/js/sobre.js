@@ -1,3 +1,8 @@
+
+
+
+
+
 let posicao = 0;
        let mensagem = "Bem vindo á quatro estações, cadastre-se para receber todas as novidades... ";  //Esse texto
 
@@ -19,4 +24,6 @@ function relogio() {
   let t = d.toLocaleTimeString();
   document.getElementById("demo").innerHTML = t;
 } 
+
+
 
